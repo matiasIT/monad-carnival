@@ -459,6 +459,7 @@ ctx.restore();
   const handleShoot = e => {
     if (!state.playing) return;
     if (shootSoundRef.current) {
+      shootSoundRef.current.volume = 0.14;
       shootSoundRef.current.currentTime = 0;
       shootSoundRef.current.play();
     }
